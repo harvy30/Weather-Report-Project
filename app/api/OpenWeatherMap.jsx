@@ -23,6 +23,4 @@ module.exports = {
 
   }
 }
-
-
 // in Browser some characters can convert into Other Characters
