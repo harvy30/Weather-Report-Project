@@ -47,6 +47,14 @@ var Weather = React.createClass({
       */
 
   },
+  
+  componentWillReceiveProps: function(nextProps) {
+    var location = nextProps.location.query.location;
+    if (location && location.length > 0)  {
+      this.handleSearch(location);
+      window.location.hash = '#/';
+    }
+  },
   componentDidMount: function () {
     // get the value from react-router
     var location = this.props.location.query.location;
@@ -55,7 +63,6 @@ var Weather = React.createClass({
       window.location.hash = '#/';
     }
   },
-
   render: function () {
     var { temp, location, isLoading, errorMessage } = this.state;
 
