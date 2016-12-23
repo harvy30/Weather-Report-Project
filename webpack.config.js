@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+
 module.exports = {
   entry: [
     'script!jquery/dist/jquery.min.js',
@@ -29,6 +30,8 @@ module.exports = {
       About: 'app/components/About.jsx',
       Examples: 'app/components/Examples.jsx',
       OpenWeatherMap: 'app/api/OpenWeatherMap.jsx'
+      ErrorModal: 'app/components/ErrorModal.jsx',
+      applicationStyles: 'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
   },

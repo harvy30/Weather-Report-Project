@@ -28,6 +28,8 @@ var {name} = obj;
 // style and css loaders
 require('style!css!foundation-sites/dist/foundation.min.css')
 $(document).foundation();
+// app css which is custom css
+require('style!css!sass!applicationStyles');
 
 ReactDOM.render(
   <Router history={hashHistory}>

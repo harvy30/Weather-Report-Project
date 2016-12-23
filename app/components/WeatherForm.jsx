@@ -1,6 +1,5 @@
 var React = require('react');
 
-
 var WeatherForm = React.createClass({
   onFormSubmit: function (evt) {
     evt.preventDefault();
