@@ -33,7 +33,7 @@ var Weather = React.createClass({
         });
       }, function (errMessage) {
         that.setState({
-          isLoading: false
+          isLoading: false,
           errorMessage: errMessage.message
         })
         //alert('Error Occured', errMessage);
@@ -47,7 +47,7 @@ var Weather = React.createClass({
       */
 
   },
-  
+
   componentWillReceiveProps: function(nextProps) {
     var location = nextProps.location.query.location;
     if (location && location.length > 0)  {
