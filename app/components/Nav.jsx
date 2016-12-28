@@ -1,10 +1,12 @@
 var React = require('react');
 var { Link, IndexLink } = require('react-router');
+var Button = require('Button');
+
 
 var Nav = React.createClass({
   onSearch: function (evt) {
     evt.preventDefault();
-    debugger;
+    //debugger;
     // console.log('Not yet fully developed');
     var city = this.refs.navBarInput.value;
     console.log(city);
@@ -43,7 +45,7 @@ var Nav = React.createClass({
                 <input type="search" ref="navBarInput" placeholder="Search Weather" />
               </li>
               <li>
-                <button className="button">Fetch Weather</button>
+                <Button onClick={this.onSearch}>Fetch Weather</Button>
               </li>
             </ul>
           </form>
